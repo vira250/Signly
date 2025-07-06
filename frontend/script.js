@@ -92,7 +92,7 @@ function sendLandmarksToBackend(landmarksRaw) {
     shiftedLandmarks.push(ys[i] - minY);
   }
 
-  fetch("http://127.0.0.1:5000/predict", {
+  fetch("https://signly-5aif.onrender.com/predict", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ landmarks: shiftedLandmarks }),
