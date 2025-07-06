@@ -1,0 +1,9 @@
+# render.yaml
+services:
+  - type: web
+    name: asl-backend
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    workingDir: backend
+    autoDeploy: true
